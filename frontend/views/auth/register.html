@@ -1,0 +1,48 @@
+<div class="container-fluid appointment py-5">
+    <div class="container py-5">
+        <div class="row g-5 align-items-center">
+
+            <div class="col-lg-12 wow fadeInRight" data-wow-delay="0.4s">
+                <div class="appointment-form rounded p-5">
+                    <p class="fs-4 text-uppercase text-primary">Welcome</p>
+                    <h1 class="display-5 mb-4">Đăng Ký</h1>
+                    <form ng-submit="register()" name="registrationForm" novalidate>
+                        <div class="row gy-3 gx-4">
+                            <div class="col-xl-12">
+                                <input type="email" class="form-control py-3 border-primary bg-transparent text-white"
+                                    ng-model="user.Email" name="email" placeholder="Email" required>
+                                <div ng-show="registrationForm.email.$dirty && registrationForm.email.$error.required"
+                                    class="text-danger">Email is required</div>
+                                <div ng-show="registrationForm.email.$dirty && registrationForm.email.$error.email"
+                                    class="text-danger">Invalid email format</div>
+                            </div>
+                            <div class="col-xl-12">
+                                <input type="password"
+                                    class="form-control py-3 border-primary bg-transparent text-white"
+                                    ng-model="user.Password" name="password" placeholder="Password" required>
+                                <div ng-show="registrationForm.password.$dirty && registrationForm.password.$error.required"
+                                    class="text-danger">Password is required</div>
+                            </div>
+                            <div class="col-xl-12">
+                                <input type="password"
+                                    class="form-control py-3 border-primary bg-transparent text-white"
+                                    ng-model="confirmPassword" name="confirmPassword" placeholder="Confirm Password"
+                                    required>
+                                <div ng-show="registrationForm.confirmPassword.$dirty && registrationForm.confirmPassword.$error.required"
+                                    class="text-danger">Confirm Password is required</div>
+                                <div ng-show="registrationForm.confirmPassword.$dirty && confirmPassword !== user.Password"
+                                    class="text-danger">Passwords do not match</div>
+                            </div>
+                            <div class="col-12">
+                                <button type="submit" class="btn btn-primary text-white w-100 py-3 px-5"
+                                    ng-disabled="registrationForm.$invalid">Submit</button>
+                            </div>
+                        </div>
+                    </form>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

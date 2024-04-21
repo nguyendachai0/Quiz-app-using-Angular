@@ -1,0 +1,46 @@
+<!-- Header Start -->
+<div class="container-fluid bg-breadcrumb">
+    <div class="container text-center py-5" style="max-width: 900px;">
+        <h3 class="text-white display-3 mb-4 wow fadeInDown" data-wow-delay="0.1s">Chi tiết khóa học</h1>
+            <ol class="breadcrumb justify-content-center mb-0 wow fadeInDown" data-wow-delay="0.3s">
+                <li class="breadcrumb-item"><a href="index.html">Trang chủ</a></li>
+                <li class="breadcrumb-item active text-primary">Chi tiết</li>
+            </ol>
+    </div>
+</div>
+
+
+
+<div class="container-fluid course-detail bg-light py-5" ng-controller="SubjectDetailController">
+    <div class="container py-5">
+        <div class="row g-5 align-items-center">
+            <div class="col-lg-5 wow fadeInLeft" data-wow-delay="0.2s">
+                <div class="course-img pb-5 ps-5">
+                    <img src="frontend/app/assets/images/logos/{{subject.Logo}}" class="img-fluid rounded w-100"
+                        style="object-fit: cover;" alt="Khóa học Javascript">
+
+                    <div class="course-duration">5 Tuần</div>
+                </div>
+            </div>
+            <div class="col-lg-7 wow fadeInRight" data-wow-delay="0.4s">
+                <div class="section-title text-start mb-5">
+                    <h4 class="sub-title pe-3 mb-0">Khóa Học</h4>
+                    <h1 class="display-3 mb-4">{{subject.Name}}</h1>
+                    <p class="mb-4">{{subject.Description}}</p>
+                    <div class="mb-4">
+                        <p class="text-secondary"><i class="fa fa-check text-primary me-2"></i> Căn bản đến nâng cao,
+                            toàn diện mọi khía cạnh.</p>
+                        <p class="text-secondary"><i class="fa fa-check text-primary me-2"></i> Học qua dự án thực tế,
+                            áp dụng ngay.</p>
+                        <p class="text-secondary"><i class="fa fa-check text-primary me-2"></i> Hỗ trợ từ đội ngũ giảng
+                            viên chuyên nghiệp.</p>
+                    </div>
+                    <a ng-click="navigateTo('test')" class="btn btn-primary rounded-pill text-white py-3 px-5">Tham Gia
+                        Ngay</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- About End -->

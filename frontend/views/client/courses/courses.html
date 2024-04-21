@@ -1,0 +1,31 @@
+<div class="container-fluid bg-breadcrumb">
+    <div class="container text-center py-5" style="max-width: 900px;">
+        <h3 class="text-white display-3 mb-4 wow fadeInDown" data-wow-delay="0.1s">Các khóa học</h1>
+            <ol class="breadcrumb justify-content-center mb-0 wow fadeInDown" data-wow-delay="0.3s">
+                <li class="breadcrumb-item"><a href="index.html">Trang chủ</a></li>
+                <li class="breadcrumb-item active text-primary">Các khóa học</li>
+            </ol>
+    </div>
+</div>
+
+
+<div class="container py-5">
+    <div class="row">
+        <div class="col-md-12 mb-12">
+            <div class="card">
+                <div class="card-header text-center bg-primary text-white">
+                    <h4 class="card-title">Danh sách các môn học</h4>
+                </div>
+                <div class="card-body">
+                    <div class="list-group">
+                        <a class="list-group-item list-group-item-action" ng-repeat="course in courses"
+                            ng-click="navigateTo(course.slug)">{{course.name}}</a>
+
+                        <!-- Add more subjects dynamically here -->
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>

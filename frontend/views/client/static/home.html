@@ -1,0 +1,617 @@
+<div id="carouselExampleFade" class="carousel slide carousel-fade" style="margin-top: 60px" data-bs-ride="carousel">
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img src="assets/img/banner-1.jpg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+            <img src="assets/img/banner-2.jpg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+            <img src="assets/img/banner-3.png" class="d-block w-100" alt="...">
+        </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+    </button>
+</div>
+<!-- Services Start -->
+<div class="container-fluid service py-5">
+    <div class="container py-5">
+        <div class="section-title mb-5 wow fadeInUp" data-wow-delay="0.2s">
+            <div class="sub-style">
+                <h4 class="sub-title px-3 mb-0">Chúng Tôi Là Ai</h4>
+            </div>
+            <h1 class="display-3 mb-4">Khám phá Tri Thức Vô Tận.</h1>
+            <p class="mb-0">Chúng tôi là nơi gặp gỡ của sự đam mê học hỏi và công nghệ tiên tiến, nơi mỗi khóa học trực
+                tuyến được thiết kế để mang đến cho bạn kiến thức chất lượng cao, linh hoạt và tương tác cao. Đội ngũ
+                giảng viên của chúng tôi gồm những chuyên gia hàng đầu trong lĩnh vực của họ, sẵn sàng truyền đạt kiến
+                thức và kinh nghiệm quý báu của mình qua màn hình, đến tận nơi bạn ở.</p>
+        </div>
+        <div class="row g-4 justify-content-center" ng-controller="SubjectsController">
+            <div ng-repeat="subject in subjects" class="col-md-6 col-lg-4 col-xl-3 wow fadeInUp" data-wow-delay="0.1s">
+                <div class="service-item rounded">
+                    <div class="service-img rounded-top">
+
+                        <img src="frontend/app/assets/images/logos/{{subject.Logo}}" class=" img-fluid rounded-top
+                            w-100" alt="">
+
+                    </div>
+                    <div class="service-content rounded-bottom bg-light p-4 ">
+                        <div class="service-content-inner">
+                            <h5 class="mb-4 title">{{subject.Name}}</h5>
+                            <p class="mb-4 description">{{subject.Description}}</p>
+                            <a href="#" class="btn btn-primary rounded-pill text-white py-2 px-4 mb-2">Read More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 text-center wow fadeInUp" data-wow-delay="0.2s">
+                <a class="btn btn-primary rounded-pill text-white py-3 px-5" href="#">Các khóa học khác</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Services End -->
+
+
+<!-- About Start -->
+<div class="container-fluid about bg-light py-5">
+    <div class="container py-5">
+        <div class="row g-5 align-items-center">
+            <div class="col-lg-5 wow fadeInLeft" data-wow-delay="0.2s">
+                <div class="about-img pb-5 ps-5">
+                    <img src="assets/img/online-learning.jpg" class="img-fluid rounded w-100" style="object-fit: cover;"
+                        alt="Image">
+                    <div class="about-img-inner">
+                        <img src="assets/img/elearning.jpg" class="img-fluid rounded-circle" alt="Image">
+                    </div>
+                    <div class="about-experience">15 năm kinh nghiệm</div>
+                </div>
+            </div>
+            <div class="col-lg-7 wow fadeInRight" data-wow-delay="0.4s">
+                <div class="section-title text-start mb-5">
+                    <h4 class="sub-title pe-3 mb-0">Về Chúng Tôi</h4>
+                    <h1 class="display-3 mb-4">Chúng tôi sẵn sàng giúp bạn cải thiện kiến thức.</h1>
+                    <p class="mb-4">Chúng tôi cung cấp một loạt các khóa học chất lượng cao với nhiều chủ đề khác nhau,
+                        từ lập trình đến marketing và thiết kế. Hãy đến với chúng tôi để nâng cao kỹ năng của bạn và
+                        phát triển sự nghiệp.</p>
+                    <div class="mb-4">
+                        <p class="text-secondary"><i class="fa fa-check text-primary me-2"></i> Cung cấp trải nghiệm học
+                            tập cá nhân hóa, giúp bạn tiếp thu kiến thức một cách hiệu quả nhất.</p>
+                        <p class="text-secondary"><i class="fa fa-check text-primary me-2"></i> Chương trình học được
+                            thiết kế để đáp ứng mọi nhu cầu, từ cơ bản đến nâng cao.</p>
+                        <p class="text-secondary"><i class="fa fa-check text-primary me-2"></i> Cam kết mang lại giá trị
+                            thực sự cho sự nghiệp và sự phát triển cá nhân của bạn.</p>
+
+                    </div>
+                </div>
+                <a href="#" class="btn btn-primary rounded-pill text-white py-3 px-5">Khám phá</a>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+<!-- About End -->
+
+<!-- Feature Start -->
+<div class="container-fluid feature py-5">
+    <div class="container py-5">
+        <div class="section-title mb-5 wow fadeInUp" data-wow-delay="0.1s">
+            <div class="sub-style">
+                <h4 class="sub-title px-3 mb-0">Lựa chọn chúng tôi để</h4>
+            </div>
+            <h1 class="display-3 mb-4">Nâng cao Kiến Thức và Kỹ Năng của Bạn</h1>
+            <p class="mb-0">Cung cấp các khóa học trực tuyến chất lượng cao, từ cơ bản đến nâng cao, giúp bạn đạt được
+                mục tiêu học tập và phát triển sự nghiệp.</p>
+        </div>
+        <div class="row g-4 justify-content-center">
+            <div class="col-md-6 col-lg-4 col-xl-3 wow fadeInUp" data-wow-delay="0.1s">
+                <div class="row-cols-1 feature-item p-4">
+                    <div class="col-12">
+                        <div class="feature-icon mb-4">
+                            <div class="p-3 d-inline-flex bg-white rounded">
+                                <i class="fas fa-diagnoses fa-4x text-primary"></i>
+                            </div>
+                        </div>
+                        <div class="feature-content d-flex flex-column">
+                            <h5 class="mb-4 title">Khóa Học Đa Dạng</h5>
+                            <p class="mb-0">Từ kỹ năng mềm đến chuyên môn nghề nghiệp, khám phá một loạt các khóa học để
+                                nâng cao kỹ năng của bạn.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4 col-xl-3 wow fadeInUp" data-wow-delay="0.3s">
+                <div class="row-cols-1 feature-item p-4">
+                    <div class="col-12">
+                        <div class="feature-icon mb-4">
+                            <div class="p-3 d-inline-flex bg-white rounded">
+                                <i class="fas fa-users fa-4x text-primary"></i>
+                            </div>
+                        </div>
+                        <div class="feature-content d-flex flex-column">
+                            <h5 class="mb-4 title">Đội Ngũ Chuyên Nghiệp</h5>
+                            <p class="mb-0">Học từ những chuyên gia hàng đầu trong lĩnh vực, mang đến cho bạn cái nhìn
+                                sâu sắc và kinh nghiệm thực tế.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4 col-xl-3 wow fadeInUp" data-wow-delay="0.5s">
+                <div class="row-cols-1 feature-item p-4">
+                    <div class="col-12">
+                        <div class="feature-icon mb-4">
+                            <div class="p-3 d-inline-flex bg-white rounded">
+                                <i class="fas fa-headset fa-4x text-primary"></i>
+                            </div>
+                        </div>
+                        <div class="feature-content d-flex flex-column">
+                            <h5 class="mb-4 title">Hỗ Trợ Học Viên</h5>
+                            <p class="mb-0">Chúng tôi cam kết hỗ trợ học viên trên mọi bước đường, giúp bạn đạt được mục
+                                tiêu học tập của mình.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4 col-xl-3 wow fadeInUp" data-wow-delay="0.7s">
+                <div class="row-cols-1 feature-item p-4">
+                    <div class="col-12">
+                        <div class="feature-icon mb-4">
+                            <div class="p-3 d-inline-flex bg-white rounded">
+                                <i class="fas fa-hands fa-4x text-primary"></i>
+                            </div>
+                        </div>
+                        <div class="feature-content d-flex flex-column">
+                            <h5 class="mb-4 title">Chứng Chỉ Công Nhận</h5>
+                            <p class="mb-0">Hoàn thành khóa học và nhận chứng chỉ công nhận, mở rộng cơ hội nghề nghiệp
+                                của bạn.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4 col-xl-3 wow fadeInUp" data-wow-delay="0.1s">
+                <div class="row-cols-1 feature-item p-4">
+                    <div class="col-12">
+                        <div class="feature-icon mb-4">
+                            <div class="p-3 d-inline-flex bg-white rounded">
+                                <i class="fas fa-spa fa-4x text-primary"></i>
+                            </div>
+                        </div>
+                        <div class="feature-content d-flex flex-column">
+                            <h5 class="mb-4 title">Trung Tâm Đoạt Giải Thưởng Cao Quý</h5>
+                            <p class="mb-0">Chúng tôi tự hào được công nhận với nhiều giải thưởng uy tín, phản ánh cam
+                                kết và xuất sắc trong lĩnh vực giáo dục và đào tạo.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4 col-xl-3 wow fadeInUp" data-wow-delay="0.3s">
+                <div class="row-cols-1 feature-item p-4">
+                    <div class="col-12">
+                        <div class="feature-icon mb-4">
+                            <div class="p-3 d-inline-flex bg-white rounded">
+                                <i class="fas fa-heart fa-4x text-primary"></i>
+                            </div>
+                        </div>
+                        <div class="feature-content d-flex flex-column">
+                            <h5 class="mb-4 title">Mục Tiêu Học Tập Rõ Ràng</h5>
+                            <p class="mb-0">Chúng tôi cung cấp lộ trình học tập rõ ràng, giúp bạn theo dõi tiến độ và
+                                đạt được mục tiêu.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4 col-xl-3 wow fadeInUp" data-wow-delay="0.5s">
+                <div class="row-cols-1 feature-item p-4">
+                    <div class="col-12">
+                        <div class="feature-icon mb-4">
+                            <div class="p-3 d-inline-flex bg-white rounded">
+                                <i class="fab fa-pied-piper fa-4x text-primary"></i>
+                            </div>
+                        </div>
+                        <div class="feature-content d-flex flex-column">
+                            <h5 class="mb-4 title">Cam Kết Đầu Ra 100%</h5>
+                            <p class="mb-0">Chúng tôi cam kết cung cấp chất lượng dịch vụ hàng đầu và đảm bảo mỗi học
+                                viên hoàn thành khóa học với sự thành công và đạt được mục tiêu học tập của mình.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4 col-xl-3 wow fadeInUp" data-wow-delay="0.7s">
+                <div class="row-cols-1 feature-item p-4">
+                    <div class="col-12">
+                        <div class="feature-icon mb-4">
+                            <div class="p-3 d-inline-flex bg-white rounded">
+                                <i class="fas fa-user-md fa-4x text-primary"></i>
+                            </div>
+                        </div>
+                        <div class="feature-content d-flex flex-column">
+                            <h5 class="mb-4 title">Trung Tâm Thoải Mái</h5>
+                            <p class="mb-0">Môi trường học tập được thiết kế để bạn cảm thấy thoải mái và tập trung tốt
+                                nhất.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 text-center wow fadeInUp" data-wow-delay="0.2s">
+                <a href="#" class="btn btn-primary rounded-pill text-white py-3 px-5">Chi tiết</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Feature End -->
+
+
+<!-- Book Appointment Start -->
+<div class="container-fluid appointment py-5">
+    <div class="container py-5">
+        <div class="row g-5 align-items-center">
+            <div class="col-lg-6 wow fadeInLeft" data-wow-delay="0.2">
+                <div class="section-title text-start">
+                    <h4 class="sub-title pe-3 mb-0">Chìa Khóa Thành Công</h4>
+                    <h1 class="display-4 mb-4">Dịch Vụ Giáo Dục Chất Lượng Với Kết Quả Đảm Bảo</h1>
+                    <p class="mb-4">Mỗi khóa học của chúng tôi được thiết kế để đáp ứng nhu cầu cụ thể của học viên, với
+                        cam kết mang lại kiến thức thực tế và kỹ năng ứng dụng cao.</p>
+                    <div class="row g-4">
+                        <div class="col-sm-6">
+                            <div class="d-flex flex-column h-100">
+                                <div class="mb-4">
+                                    <h5 class="mb-3"><i class="fa fa-check text-primary me-2"></i> Tiếp Cận Cập Nhật
+                                    </h5>
+                                    <p class="mb-0">Cập nhật liên tục các khóa học theo xu hướng thị trường và nhu cầu
+                                        thực tế.</p>
+                                </div>
+                                <div class="mb-4">
+                                    <h5 class="mb-3"><i class="fa fa-check text-primary me-2"></i>Phát Triển Kỹ Năng
+                                    </h5>
+                                    <p class="mb-0">Tập trung vào việc phát triển kỹ năng thực tiễn, chuẩn bị sẵn sàng
+                                        cho sự nghiệp.</p>
+                                </div>
+                                <div class="text-start mb-4">
+                                    <a href="#" class="btn btn-primary rounded-pill text-white py-3 px-5">Xem thêm
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="video h-100">
+                                <img src="assets/img/video-img.jpg" class="img-fluid rounded w-100 h-100"
+                                    style="object-fit: cover;" alt="">
+                                <button type="button" class="btn btn-play" data-bs-toggle="modal"
+                                    data-src="https://www.youtube.com/embed/DWRcNpR6Kdc" data-bs-target="#videoModal">
+                                    <span></span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 wow fadeInRight" data-wow-delay="0.4s">
+                <div class="appointment-form rounded p-5">
+                    <p class="fs-4 text-uppercase text-primary">Đăng Ký Ngay</p>
+                    <h1 class="display-5 mb-4">Lên Lịch Hẹn</h1>
+                    <form>
+                        <div class="row gy-3 gx-4">
+                            <div class="col-xl-6">
+                                <input type="text" class="form-control py-3 border-primary bg-transparent text-white"
+                                    placeholder="First Name">
+                            </div>
+                            <div class="col-xl-6">
+                                <input type="email" class="form-control py-3 border-primary bg-transparent text-white"
+                                    placeholder="Email">
+                            </div>
+                            <div class="col-xl-6">
+                                <input type="phone" class="form-control py-3 border-primary bg-transparent"
+                                    placeholder="Phone">
+                            </div>
+                            <div class="col-xl-6">
+                                <select class="form-select py-3 border-primary bg-transparent"
+                                    aria-label="Default select example">
+                                    <option selected>Giới Tính</option>
+                                    <option value="1">Nam</option>
+                                    <option value="2">Nữ</option>
+                                    <option value="3">Khác</option>
+                                </select>
+                            </div>
+                            <div class="col-xl-6">
+                                <input type="date" class="form-control py-3 border-primary bg-transparent">
+                            </div>
+                            <div class="col-xl-6">
+                                <select class="form-select py-3 border-primary bg-transparent"
+                                    aria-label="Default select example">
+                                    <option selected>Khóa Học</option>
+                                    <option value="1">Lập Trình</option>
+                                    <option value="2">Thiết Kế Đồ Họa</option>
+                                    <option value="3">Tiếng Anh Giao Tiếp</option>
+                                </select>
+                            </div>
+                            <div class="col-12">
+                                <textarea class="form-control border-primary bg-transparent text-white" name="text"
+                                    id="area-text" cols="30" rows="5" placeholder="Write Comments"></textarea>
+                            </div>
+                            <div class="col-12">
+                                <button type="button" class="btn btn-primary text-white w-100 py-3 px-5">GỬI ĐĂNG KÝ
+
+
+
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Modal Video -->
+<div class="modal fade" id="videoModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content rounded-0">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Youtube Video</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <!-- 16:9 aspect ratio -->
+                <div class="ratio ratio-16x9">
+                    <iframe class="embed-responsive-item" src="" id="video" allowfullscreen allowscriptaccess="always"
+                        allow="autoplay"></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Book Appointment End -->
+
+
+<!-- Team Start -->
+<div class="container-fluid team py-5">
+    <div class="container py-5">
+        <div class="section-title mb-5 wow fadeInUp" data-wow-delay="0.1s">
+            <div class="sub-style">
+                <h4 class="sub-title px-3 mb-0">Gặp Gỡ Nhóm Sáng Lập Của Chúng Tôi</h4>
+            </div>
+            <h1 class="display-3 mb-4">Mang Đến Giá Trị Cho Mọi Người</h1>
+            <p class="mb-0">Các nhà sáng lập của chúng tôi là những cá nhân đam mê và tận tụy, cam kết cung cấp các dịch
+                vụ, khóa học chất lượng cũng như thay đổi bản mới nhất để theo kịp với sự thay đổi của công nghệ.
+            </p>
+        </div>
+        <div class="row g-4 justify-content-center">
+            <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.1s">
+                <div class="team-item rounded">
+                    <div class="team-img rounded-top h-100">
+                        <img src="assets/img/troll-hai.png" class="img-fluid rounded-top w-100" alt="">
+                        <div class="team-icon d-flex justify-content-center">
+                            <a class="btn btn-square btn-primary text-white rounded-circle mx-1" href=""><i
+                                    class="fab fa-facebook-f"></i></a>
+                            <a class="btn btn-square btn-primary text-white rounded-circle mx-1" href=""><i
+                                    class="fab fa-twitter"></i></a>
+                            <a class="btn btn-square btn-primary text-white rounded-circle mx-1" href=""><i
+                                    class="fab fa-instagram"></i></a>
+                            <a class="btn btn-square btn-primary text-white rounded-circle mx-1" href=""><i
+                                    class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                    <div class="team-content text-center border border-primary border-top-0 rounded-bottom p-4">
+                        <h5>グエンダックハイ</h5>
+                        <p class="mb-0">Giám đốc nhân sự</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.3s">
+                <div class="team-item rounded">
+                    <div class="team-img rounded-top h-100">
+                        <img src="assets/img/hai-chan.png" class="img-fluid rounded-top w-100" alt="">
+                        <div class="team-icon d-flex justify-content-center">
+                            <a class="btn btn-square btn-primary text-white rounded-circle mx-1" href=""><i
+                                    class="fab fa-facebook-f"></i></a>
+                            <a class="btn btn-square btn-primary text-white rounded-circle mx-1" href=""><i
+                                    class="fab fa-twitter"></i></a>
+                            <a class="btn btn-square btn-primary text-white rounded-circle mx-1" href=""><i
+                                    class="fab fa-instagram"></i></a>
+                            <a class="btn btn-square btn-primary text-white rounded-circle mx-1" href=""><i
+                                    class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                    <div class="team-content text-center border border-primary border-top-0 rounded-bottom p-4">
+                        <h5>阮达海</h5>
+                        <p class="mb-0">Giám đốc sản xuất</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.5s">
+                <div class="team-item rounded">
+                    <div class="team-img rounded-top h-100">
+                        <img src="assets/img/lee-hai.png" class="img-fluid rounded-top w-100" alt="">
+                        <div class="team-icon d-flex justify-content-center">
+                            <a class="btn btn-square btn-primary text-white rounded-circle mx-1" href=""><i
+                                    class="fab fa-facebook-f"></i></a>
+                            <a class="btn btn-square btn-primary text-white rounded-circle mx-1" href=""><i
+                                    class="fab fa-twitter"></i></a>
+                            <a class="btn btn-square btn-primary text-white rounded-circle mx-1" href=""><i
+                                    class="fab fa-instagram"></i></a>
+                            <a class="btn btn-square btn-primary text-white rounded-circle mx-1" href=""><i
+                                    class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                    <div class="team-content text-center border border-primary border-top-0 rounded-bottom p-4">
+                        <h5>Nguyễn Đắc Hải</h5>
+                        <p class="mb-0">Tổng giám đốc</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.7s">
+                <div class="team-item rounded">
+                    <div class="team-img rounded-top h-100">
+                        <img src="assets/img/sup-hai.png" class="img-fluid rounded-top w-100" alt="">
+                        <div class="team-icon d-flex justify-content-center">
+                            <a class="btn btn-square btn-primary text-white rounded-circle mx-1" href=""><i
+                                    class="fab fa-facebook-f"></i></a>
+                            <a class="btn btn-square btn-primary text-white rounded-circle mx-1" href=""><i
+                                    class="fab fa-twitter"></i></a>
+                            <a class="btn btn-square btn-primary text-white rounded-circle mx-1" href=""><i
+                                    class="fab fa-instagram"></i></a>
+                            <a class="btn btn-square btn-primary text-white rounded-circle mx-1" href=""><i
+                                    class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                    <div class="team-content text-center border border-primary border-top-0 rounded-bottom p-4">
+                        <h5>Нгуен Дак Хай</h5>
+                        <p class="mb-0">Phó Giám đốc</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Team End -->
+
+
+<!-- Testimonial Start -->
+<div class="container-fluid testimonial py-5 wow zoomInDown" data-wow-delay="0.1s">
+    <div class="container py-5">
+        <div class="section-title mb-5">
+            <div class="sub-style">
+                <h4 class="sub-title text-white px-3 mb-0">Phản Hồi Của Học Viên</h4>
+            </div>
+            <h1 class="display-3 mb-4">Nhận Xét Từ Học Viên</h1>
+        </div>
+
+        <div id="carouselExampleCaptions" class="carousel slide pt-10" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="assets/img/nguyen-bao.jpg" class="d-block mx-auto img-fluid  rounded-circle w-20" alt="">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h4>Trần Hoàng Bảo</h4>
+                        <h5>TP. Hồ Chí Minh, Việt Nam</h5>
+                        <p>Khóa học đã mở ra một cánh cửa mới cho sự nghiệp của tôi. Tôi đã học được nhiều kỹ thuật và
+                            phương pháp mới mà tôi có thể áp dụng ngay vào công việc. Cảm ơn vì đã tạo ra một khóa học
+                            tuyệt vời như thế này!</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="assets/img/minhanh.webp" class="d-block mx-auto img-fluid  rounded-circle w-20" alt="">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h4>Lê Thị Ánh Hồng</h4>
+                        <h5>Đà Nẵng, Việt Nam</h5>
+                        <p>Môi trường học tập thực sự đã khích lệ tôi mỗi ngày. Tôi cảm thấy mình không chỉ học được từ
+                            các bài giảng mà còn từ các bạn học viên khác. Một trải nghiệm tuyệt vời!</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="assets/img/testimonial-img.jpg" class="d-block mx-auto img-fluid  rounded-circle w-20"
+                        alt="">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h4>Nguyễn Minh Anh</h4>
+                        <h5>Hà Nội, Việt Nam</h5>
+                        <p>Kể từ khi tham gia khóa học, tôi đã cảm thấy kiến thức và kỹ năng của mình được cải thiện rõ
+                            rệt. Cách giảng dạy chuyên nghiệp và tận tâm của giáo viên đã giúp tôi tiếp cận với những
+                            thông tin quý giá mà trước đây tôi không biết đến.</p>
+                    </div>
+                </div>
+
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+
+    </div>
+</div>
+<!-- Testimonial End -->
+
+
+<!-- Blog Start -->
+<div class="container-fluid blog py-5">
+    <div class="container py-5">
+        <div class="section-title mb-5 wow fadeInUp" data-wow-delay="0.1s">
+            <div class="sub-style">
+                <h4 class="sub-title px-3 mb-0">Blog</h4>
+            </div>
+            <h1 class="display-3 mb-4">Các chủ đề, nội dung hay</h1>
+            <p class="mb-0">Khám phá các khóa học mới nhất và chất lượng cao được thiết kế để nâng cao kỹ năng và kiến
+                thức của bạn. Hãy tham gia cùng chúng tôi để mở rộng cơ hội học tập và phát triển bản thân.</p>
+        </div>
+        <div class="row g-4 justify-content-center">
+            <div class="col-md-6 col-lg-6 col-xl-4 wow fadeInUp" data-wow-delay="0.1s">
+                <div class="blog-item rounded">
+                    <div class="blog-img">
+                        <img src="assets/img/blog-1.jpg" class="img-fluid w-100" alt="Image">
+                    </div>
+                    <div class="blog-centent p-4">
+                        <div class="d-flex justify-content-between mb-4">
+                            <p class="mb-0 text-muted"><i class="fa fa-calendar-alt text-primary"></i> 01 Jan 2045
+                            </p>
+                            <a href="#" class="text-muted"><span class="fa fa-comments text-primary"></span> 3
+                                Bình luận</a>
+                        </div>
+                        <a href="#" class="h4">Top các câu hỏi phỏng vấn 2023</a>
+                        <p class="my-4">Top 100 các câu hỏi phỏng vấn của các doanh nghiệp hàng đầu trong năm 2023 và
+                            giải thích</p>
+                        <a href="#" class="btn btn-primary rounded-pill text-white py-2 px-4 mb-1">Đọc thêm</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-6 col-xl-4 wow fadeInUp" data-wow-delay="0.3s">
+                <div class="blog-item rounded">
+                    <div class="blog-img">
+                        <img src="assets/img/blog-2.jpg" class="img-fluid w-100" alt="Image">
+                    </div>
+                    <div class="blog-centent p-4">
+                        <div class="d-flex justify-content-between mb-4">
+                            <p class="mb-0 text-muted"><i class="fa fa-calendar-alt text-primary"></i> 01 Jan 2045
+                            </p>
+                            <a href="#" class="text-muted"><span class="fa fa-comments text-primary"></span> 3
+                                Bình luận</a>
+                        </div>
+                        <a href="#" class="h4">Lợi ích của việc học thuật toán</a>
+                        <p class="my-4">Khám phá tầm quan trọng của thuật toán trong lập trình, và các lợi ích của thuật
+                            toán nếu được áp dụng đúng cách</p>
+                        <a href="#" class="btn btn-primary rounded-pill text-white py-2 px-4 mb-1">Đọc thêm</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-6 col-xl-4 wow fadeInUp" data-wow-delay="0.5s">
+                <div class="blog-item rounded">
+                    <div class="blog-img">
+                        <img src="assets/img/blog-3.jpg" class="img-fluid w-100" alt="Image">
+                    </div>
+                    <div class="blog-centent p-4">
+                        <div class="d-flex justify-content-between mb-4">
+                            <p class="mb-0 text-muted"><i class="fa fa-calendar-alt text-primary"></i> 01 Jan 2045
+                            </p>
+                            <a href="#" class="text-muted"><span class="fa fa-comments text-primary"></span> 3
+                                Bình luận</a>
+                        </div>
+                        <a href="#" class="h4">Cho ra mắt phần mềm trí tuệ nhân tạo Devin</a>
+                        <p class="my-4">Sự ra đời của phần mềm trí tuệ nhân tạo Devin là thách thức hay cơ hội cho nghề
+                            nghiệp lập trình viên</p>
+                        <a href="#" class="btn btn-primary rounded-pill text-white py-2 px-4 mb-1">Đọc thêm</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Blog End -->

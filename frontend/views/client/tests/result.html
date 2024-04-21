@@ -1,0 +1,52 @@
+<!-- Header Start -->
+<div class="container-fluid bg-breadcrumb">
+    <div class="container text-center py-5" style="max-width: 900px;">
+        <h3 class="text-white display-3 mb-4 wow fadeInDown" data-wow-delay="0.1s">Kết Quả Kiểm Tra</h1>
+            <ol class="breadcrumb justify-content-center mb-0 wow fadeInDown" data-wow-delay="0.3s">
+                <li class="breadcrumb-item"><a href="index.html">Trang chủ</a></li>
+                <li class="breadcrumb-item active text-primary">Kết quả</li>
+            </ol>
+    </div>
+</div>
+
+<div class="container-fluid about bg-light py-5">
+    <div class="container py-5">
+        <div class="row g-5 align-items-center">
+            <div class="col-lg-5 wow fadeInLeft" data-wow-delay="0.2s">
+                <div class="about-img pb-5 ps-5">
+                    <img src="assets/img/about-education.jpg" class="img-fluid rounded w-100" style="object-fit: cover;"
+                        alt="Giáo dục">
+                    <!-- Ảnh phụ không cần thiết cho trang kết quả -->
+                </div>
+            </div>
+            <div class="col-lg-7 wow fadeInRight" data-wow-delay="0.4s">
+                <div class="section-title text-start mb-5">
+                    <h4 class="sub-title pe-3 mb-0">Kết Quả Của Bạn</h4>
+                    <h1 class="display-3 mb-4">Xem Kết Quả Kiểm Tra</h1>
+                    <p class="mb-4">Dưới đây là kết quả của bạn sau khi hoàn thành bài kiểm tra. Chúng tôi tự hào về sự
+                        nỗ lực và tiến bộ của bạn.</p>
+                    <div class="mb-4">
+                        <p class="text-secondary"><i class="fa fa-check text-primary me-2"></i> Số câu trả lời đúng:
+                            <strong>{{points}}/10</strong>
+                        </p>
+                        <p class="text-secondary"><i class="fa fa-check text-primary me-2"></i> Tổng điểm:
+                            <strong>{{points}}0%</strong>
+                        </p>
+                        <!-- <p class="text-secondary"><i class="fa fa-check text-primary me-2"></i> Bạn đã <strong>hoàn
+                                thành xuất sắc</strong> bài kiểm tra.</p> -->
+                        <p class="text-secondary">
+                            <i class="fa fa-check text-primary me-2"></i> <!-- Biểu tượng kiểm tra -->
+                            Bạn
+                            <strong ng-if="points >= 5">đã hoàn thành xuất sắc</strong>
+                            <!-- Sử dụng ng-if để kiểm tra điểm -->
+                            <strong ng-if="points < 5">cần cố gắng hơn</strong>
+                            <!-- Hiển thị kết quả khác nếu điểm thấp -->
+                            bài kiểm tra.
+                        </p>
+                    </div>
+                    <a href="quiz.html" class="btn btn-primary rounded-pill text-white py-3 px-5">Thử Lại</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

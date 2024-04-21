@@ -1,0 +1,73 @@
+<!-- Header Start -->
+<div class="container-fluid bg-breadcrumb">
+    <div class="container text-center py-5" style="max-width: 900px;">
+        <h3 class="text-white display-3 mb-4 wow fadeInDown" data-wow-delay="0.1s">Góp Ý & Hỏi Đáp</h1>
+            <ol class="breadcrumb justify-content-center mb-0 wow fadeInDown" data-wow-delay="0.3s">
+                <li class="breadcrumb-item"><a href="index.html">Trang Chủ</a></li>
+                <li class="breadcrumb-item"><a href="#">Trang</a></li>
+                <li class="breadcrumb-item active text-primary">Góp Ý & Hỏi Đáp</li>
+            </ol>
+    </div>
+</div>
+<!-- Header End -->
+
+<!-- Feedback & FAQs Start -->
+<div class="container-fluid feedback py-5">
+    <div class="container py-5">
+        <div class="row g-5 align-items-center">
+            <div class="col-lg-6 wow fadeInLeft" data-wow-delay="0.2">
+                <div class="section-title text-start">
+                    <h4 class="sub-title pe-3 mb-0">Trợ Giúp</h4>
+                    <h1 class="display-4 mb-4">Cách Chúng Tôi Có Thể Giúp Bạn?</h1>
+                    <p class="mb-4">Nếu bạn có bất kỳ câu hỏi, góp ý hoặc cần trợ giúp về dịch vụ của chúng tôi, đừng
+                        ngần ngại gửi thông tin cho chúng tôi. Đội ngũ hỗ trợ khách hàng của chúng tôi luôn sẵn lòng
+                        giúp đỡ.</p>
+                    <a href="#" class="btn btn-primary rounded-pill text-white py-3 px-5">Câu Hỏi Thường Gặp</a>
+                </div>
+            </div>
+            <div class="col-lg-6 wow fadeInRight" data-wow-delay="0.4s">
+                <div class="feedback-form rounded p-5">
+                    <p class="fs-4 text-uppercase text-primary">Góp Ý & Hỏi Đáp</p>
+                    <h1 class="display-5 mb-4">Gửi Phản Hồi</h1>
+                    <form name="quizAndAnswerForm" novalidate>
+                        <div class="row gy-3 gx-4">
+                            <div class="col-12">
+                                <input type="text" class="form-control py-3 border-primary bg-transparent"
+                                    placeholder="Tên" ng-model="quizAndAnswer.name" name="name" required>
+                                <div ng-show="quizAndAnswerForm.name.$dirty && quizAndAnswerForm.name.$error.required"
+                                    class="text-danger">Names is required</div>
+                            </div>
+                            <div class="col-xl-12">
+                                <input type="email" class="form-control py-3 border-primary bg-transparent"
+                                    ng-model="quizAndAnswer.email" name="email" placeholder="Email" required>
+                                <div ng-show="quizAndAnswerForm.email.$dirty && quizAndAnswerForm.email.$error.required"
+                                    class="text-danger">Email is required</div>
+                                <div ng-show="quizAndAnswerForm.email.$dirty && quizAndAnswerForm.email.$error.email"
+                                    class="text-danger">Invalid email format</div>
+                            </div>
+                            <div class="col-12">
+                                <input type="text" ng-model="quizAndAnswer.title" name="title"
+                                    class="form-control py-3 border-primary bg-transparent" placeholder="Tiêu Đề"
+                                    required>
+                                <div ng-show="quizAndAnswerForm.title.$dirty && quizAndAnswerForm.title.$error.required"
+                                    class="text-danger">Title is required</div>
+                            </div>
+                            <div class="col-12">
+                                <textarea class="form-control border-primary bg-transparent"
+                                    ng-model="quizAndAnswer.content" name="content" id="area-text" cols="30" rows="5"
+                                    placeholder="Nội Dung Phản Hồi" required></textarea>
+                                <div ng-show="quizAndAnswerForm.content.$dirty && quizAndAnswerForm.content.$error.required"
+                                    class="text-danger">Content is required</div>
+                            </div>
+                            <div class="col-12">
+                                <button ng-disabled="quizAndAnswerForm.$invalid" type="submit"
+                                    class="btn btn-primary text-white w-100 py-3 px-5">GỬI
+                                    NGAY</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,27 @@
+<div class="container quiz-container py-5">
+    <div class="container py-5">
+        <div class="section-title mb-5">
+            <h1 class="display-3 text-center">Quiz</h1>
+            <p class="text-center">Trả lời 9 câu hỏi để thử thách kiến thức của bạn!</p>
+        </div>
+        <div class="quiz-content">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">{{quiz.Text}}</h5>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item" ng-repeat="answer in quiz.Answers">
+                            <input type="radio" name="answer" ng-model="$parent.selectedAnswer" ng-value="answer.Id">
+                            <label>{{answer.Text}}</label>
+                        </li>
+                    </ul>
+
+                    <button class="btn btn-primary" ng-click="prevQuestion()">Previous</button>
+                    <button class=" btn btn-primary" ng-click="nextQuestion()"
+                        ng-disabled="currentQuestionIndex === quizSet.length - 1">Next</button>
+                    <button class="btn btn-success" ng-click="checkAnswer()">Submit</button>
+                    <button class="btn btn-danger" ng-click="finishQuiz()">Kết thúc</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

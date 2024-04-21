@@ -1,0 +1,125 @@
+<!-- Spinner Start -->
+<!-- <div id="spinner"
+    class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+    <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
+        <span class="sr-only">Loading...</span>
+    </div>
+</div> -->
+<!-- Spinner End -->
+
+
+<!-- Topbar Start -->
+<div class="container-fluid bg-dark px-5 d-none d-lg-block">
+    <div class="row gx-0 align-items-center" style="height: 45px;">
+        <div class="col-lg-8 text-center text-lg-start mb-lg-0">
+            <div class="d-flex flex-wrap">
+                <a href="#" class="text-light me-4"><i class="fas fa-map-marker-alt text-primary me-2"></i>Đà Nẵng</a>
+                <a href="#" class="text-light me-4"><i class="fas fa-phone-alt text-primary me-2"></i>0389755071</a>
+                <a href="#" class="text-light me-0"><i
+                        class="fas fa-envelope text-primary me-2"></i>haindfullstack@gmail.com</a>
+            </div>
+        </div>
+        <div class="col-lg-4 text-center text-lg-end">
+            <div class="d-flex align-items-center justify-content-end">
+                <a href="https://www.facebook.com/nguyendachai0"
+                    class="btn btn-light btn-square border rounded-circle nav-fill me-3"><i
+                        class="fab fa-facebook-f"></i></a>
+                <a href="https://twitter.com/home"
+                    class="btn btn-light btn-square border rounded-circle nav-fill me-3"><i
+                        class="fab fa-twitter"></i></a>
+                <a href="https://www.instagram.com/nguyendhai0/"
+                    class="btn btn-light btn-square border rounded-circle nav-fill me-3"><i
+                        class="fab fa-instagram"></i></a>
+                <a href="https://www.linkedin.com/in/dachaibackend/"
+                    class="btn btn-light btn-square border rounded-circle nav-fill me-0"><i
+                        class="fab fa-linkedin-in"></i></a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Topbar End -->
+
+
+<!-- Navbar & Hero Start -->
+<div class="container-fluid position-relative p-0" ng-controller="AuthenticateController">
+    <nav class="navbar navbar-expand-lg navbar-light bg-white px-4 px-lg-5 py-3 py-lg-0">
+        <a href="index.html" class="navbar-brand p-0">
+            <h1 class="text-primary m-0"><i class="fas fa-star-of-life me-3"></i>EasyQuiz</h1>
+            <!-- <img src="assets/img/logo.png" alt="Logo"> -->
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+            <span class="fa fa-bars"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <div class="navbar-nav ms-auto py-0">
+                <a href="/" class="nav-item nav-link active">Trang chủ</a>
+                <a href="#/about" class="nav-item nav-link">Giới thiệu</a>
+                <a href="#/course" class="nav-item nav-link">Các Môn học</a>
+
+                <a href="#/contact" class="nav-item nav-link">Liên hệ</a>
+            </div>
+            <div ng-show="isAuthenticated()">
+                <span class="nav-item nav-link">Xin chào, {{ getUserEmail() }}</span>
+            </div>
+            <a ng-hide="isAuthenticated()" href="#/login"
+                class="btn btn-primary rounded-pill text-white py-2 px-3 flex-wrap flex-sm-shrink-0 mx-3">
+                Đăng Nhập</a>
+            <a ng-hide="isAuthenticated()" href="#/register"
+                class="btn btn-dark rounded-pill text-white py-2 px-3 flex-wrap flex-sm-shrink-0">Đăng
+                ký
+            </a>
+            <!-- <li class="nav-item dropdown" ng-if="isAuthenticated">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                    aria-expanded="false">
+                    {{getUserEmail()}}
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li>
+                        <hr class="dropdown-divider">
+                    </li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+            </li> -->
+
+        </div>
+    </nav>
+
+
+    <!-- Carousel Start -->
+    <div class="header-carousel owl-carousel">
+        <div class="header-carousel-item">
+            <img src="assets/img/carousel-1.jpg" class="img-fluid w-100" alt="Image">
+            <div class="carousel-caption">
+                <div class="carousel-caption-content p-3">
+                    <h5 class="text-white text-uppercase fw-bold mb-4" style="letter-spacing: 3px;">Physiotherapy
+                        Center</h5>
+                    <h1 class="display-1 text-capitalize text-white mb-4">Best Solution For Painful Life</h1>
+                    <p class="mb-5 fs-5">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                    </p>
+                    <a class="btn btn-primary rounded-pill text-white py-3 px-5" href="#">Đăng nhập</a>
+                    <a class="btn btn-dark rounded-pill text-white py-3 px-5" href="#">Đăng ký</a>
+                </div>
+            </div>
+        </div>
+        <div class="header-carousel-item">
+            <img src="assets/img/carousel-2.jpg" class="img-fluid w-100" alt="Image">
+            <div class="carousel-caption">
+                <div class="carousel-caption-content p-3">
+                    <h5 class="text-white text-uppercase fw-bold mb-4" style="letter-spacing: 3px;">Physiotherapy
+                        Center</h5>
+                    <h1 class="display-1 text-capitalize text-white mb-4">Best Solution For Painful Life</h1>
+                    <p class="mb-5 fs-5 animated slideInDown">Lorem Ipsum is simply dummy text of the printing and
+                        typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the
+                        1500s,
+                    </p>
+                    <a class="btn btn-primary rounded-pill text-white py-3 px-5" href="#">Book Appointment</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Carousel End -->
+</div>
+<!-- Navbar & Hero End -->
